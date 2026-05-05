@@ -4,8 +4,10 @@ This document outlines the bare-metal profiling and performance benchmarks for a
 
 **Testing Environment:**
 * **Model:** Llama-3-8B-AWQ (4-bit precision)
-* **Concurrency:** 10 simultaneous requests
+* **Concurrency:** 10 simultaneous requests (Baseline Test).
 * **Engines Tested:** vLLM, SGLang
+
+**Note:** Later phases will execute a full hardware saturation sweep across [16, 32, 64, 128, 256] to map the exact latency degradation curve. Future benchmarks will also scale the architecture to 70B+ parameter models, and TensorRT-LLM to establish the absolute TPOT floor.
 
 ## Table 1: The Architecture Baseline (Monolithic vs. Disaggregated)
 
