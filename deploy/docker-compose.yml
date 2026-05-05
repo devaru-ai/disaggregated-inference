@@ -1,0 +1,8 @@
+# File: deploy/docker-compose.yml
+services:
+  master:
+    build: .
+    command: python src/v3_disaggregated/6_node_a_master.py
+  worker:
+    build: .
+    command: python src/v3_disaggregated/7_node_b_worker.ipynb

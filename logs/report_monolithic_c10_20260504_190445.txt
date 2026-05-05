@@ -1,0 +1,49 @@
+Running Monolithic Test against Local A100
+Concurrency Level: 10
+==================================================
+
+============================================================
+🚀 STARTING: PURE LLM WORKLOAD
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: http://localhost:8000
+============================================================
+✅ Benchmark Complete (10/10 succeeded, 0 errors)
+Total Wall-Clock Time : 5.46 sec
+Total System Throughput: 535.59 tokens/sec
+------------------------------------------------------------
+AVG TTFT (Time to First Token) : 57.35 ms
+P95 TTFT (95th Percentile)     : 60.71 ms
+AVG TPOT (Time Per Token)      : 17.98 ms
+============================================================
+
+
+============================================================
+🚀 STARTING: AGENT 1: FAST ROUTER
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: http://localhost:8000
+============================================================
+✅ Benchmark Complete (10/10 succeeded, 0 errors)
+Total Wall-Clock Time : 0.39 sec
+Total System Throughput: 516.92 tokens/sec
+------------------------------------------------------------
+AVG TTFT (Time to First Token) : 47.41 ms
+P95 TTFT (95th Percentile)     : 51.45 ms
+AVG TPOT (Time Per Token)      : 16.88 ms
+============================================================
+
+
+============================================================
+🚀 STARTING: AGENT 2: HEAVY RETRIEVAL
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: http://localhost:8000
+============================================================
+✅ Benchmark Complete (10/10 succeeded, 0 errors)
+Total Wall-Clock Time : 0.94 sec
+Total System Throughput: 526.19 tokens/sec
+------------------------------------------------------------
+AVG TTFT (Time to First Token) : 63.09 ms
+P95 TTFT (95th Percentile)     : 85.39 ms
+AVG TPOT (Time Per Token)      : 17.60 ms
+============================================================
+
+==================================================

@@ -1,0 +1,10 @@
+{
+  "test_profiles": {
+    "suite_0_baseline":   {"master": "A100", "worker": "A100"},
+    "suite_1_high_end":   {"master": "H100", "worker": "L4"},
+    "suite_2_production": {"master": "A100", "worker": "T4"},
+    "suite_3_edge":       {"master": "L4",   "worker": "L4"},
+    "suite_4_pathological": {"master": "L4", "worker": "H100"}
+  },
+  "default_model": "meta-llama/Llama-3-8B"
+}

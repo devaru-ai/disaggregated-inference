@@ -1,0 +1,49 @@
+Running Disaggregated Test against https://attendant-capacity-uncharted.ngrok-free.dev
+Concurrency Level: 10
+==================================================
+
+============================================================
+🚀 STARTING: PURE LLM WORKLOAD
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: https://attendant-capacity-uncharted.ngrok-free.dev
+============================================================
+✅ Benchmark Complete (10/10 succeeded, 0 errors)
+Total Wall-Clock Time : 74.07 sec
+Total System Throughput: 40.50 tokens/sec
+------------------------------------------------------------
+AVG TTFT (Time to First Token) : 940.34 ms
+P95 TTFT (95th Percentile)     : 974.06 ms
+AVG TPOT (Time Per Token)      : 243.65 ms
+============================================================
+
+
+============================================================
+🚀 STARTING: AGENT 1: FAST ROUTER
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: https://attendant-capacity-uncharted.ngrok-free.dev
+============================================================
+✅ Benchmark Complete (10/10 succeeded, 0 errors)
+Total Wall-Clock Time : 5.75 sec
+Total System Throughput: 34.78 tokens/sec
+------------------------------------------------------------
+AVG TTFT (Time to First Token) : 820.75 ms
+P95 TTFT (95th Percentile)     : 924.59 ms
+AVG TPOT (Time Per Token)      : 241.32 ms
+============================================================
+
+
+============================================================
+🚀 STARTING: AGENT 2: HEAVY RETRIEVAL
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: https://attendant-capacity-uncharted.ngrok-free.dev
+============================================================
+✅ Benchmark Complete (10/10 succeeded, 0 errors)
+Total Wall-Clock Time : 14.61 sec
+Total System Throughput: 31.76 tokens/sec
+------------------------------------------------------------
+AVG TTFT (Time to First Token) : 1698.65 ms
+P95 TTFT (95th Percentile)     : 1879.73 ms
+AVG TPOT (Time Per Token)      : 255.15 ms
+============================================================
+
+==================================================

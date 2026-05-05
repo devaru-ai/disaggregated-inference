@@ -1,0 +1,13 @@
+[
+  {"request_id": "req-001", "engine": "vLLM", "ttft_ms": 142.5, "tpot_ms": 15.2, "total_tokens": 340, "vram_usage_gb": 42.1},
+  {"request_id": "req-002", "engine": "vLLM", "ttft_ms": 138.1, "tpot_ms": 15.5, "total_tokens": 210, "vram_usage_gb": 42.5},
+  {"request_id": "req-003", "engine": "vLLM", "ttft_ms": 145.0, "tpot_ms": 14.9, "total_tokens": 512, "vram_usage_gb": 43.8},
+  
+  {"request_id": "req-004", "engine": "SGLang", "ttft_ms": 85.2, "tpot_ms": 12.1, "total_tokens": 340, "vram_usage_gb": 38.5, "note": "Prefix Cache Hit"},
+  {"request_id": "req-005", "engine": "SGLang", "ttft_ms": 15.1, "tpot_ms": 12.0, "total_tokens": 210, "vram_usage_gb": 38.6, "note": "Prefix Cache Hit"},
+  {"request_id": "req-006", "engine": "SGLang", "ttft_ms": 90.5, "tpot_ms": 12.4, "total_tokens": 512, "vram_usage_gb": 39.1, "note": "Prefix Cache Miss"},
+
+  {"request_id": "req-007", "engine": "TRT-LLM", "ttft_ms": 110.5, "tpot_ms": 9.8, "total_tokens": 340, "vram_usage_gb": 35.0},
+  {"request_id": "req-008", "engine": "TRT-LLM", "ttft_ms": 108.2, "tpot_ms": 9.7, "total_tokens": 210, "vram_usage_gb": 35.0},
+  {"request_id": "req-009", "engine": "TRT-LLM", "ttft_ms": 112.0, "tpot_ms": 9.9, "total_tokens": 512, "vram_usage_gb": 35.1}
+]

@@ -1,0 +1,25 @@
+Running Disaggregated Test against https://attendant-capacity-uncharted.ngrok-free.dev
+Concurrency Level: 10
+==================================================
+
+============================================================
+🚀 STARTING: PURE LLM WORKLOAD
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: https://attendant-capacity-uncharted.ngrok-free.dev
+============================================================
+❌ ALL REQUESTS FAILED. Server might be OOM or unreachable.
+
+============================================================
+🚀 STARTING: AGENT 1: FAST ROUTER
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: https://attendant-capacity-uncharted.ngrok-free.dev
+============================================================
+❌ ALL REQUESTS FAILED. Server might be OOM or unreachable.
+
+============================================================
+🚀 STARTING: AGENT 2: HEAVY RETRIEVAL
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: https://attendant-capacity-uncharted.ngrok-free.dev
+============================================================
+❌ ALL REQUESTS FAILED. Server might be OOM or unreachable.
+==================================================

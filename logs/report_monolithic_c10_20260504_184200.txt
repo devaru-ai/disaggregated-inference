@@ -1,0 +1,27 @@
+Running Monolithic Test against Local A100
+Concurrency Level: 10
+==================================================
+
+============================================================
+🚀 STARTING: PURE LLM WORKLOAD
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: http://localhost:8000
+============================================================
+✅ Benchmark Complete (10/10 succeeded, 0 errors)
+Total Wall-Clock Time : 4.05 sec
+Total System Throughput: 740.34 tokens/sec
+------------------------------------------------------------
+AVG TTFT (Time to First Token) : 80.40 ms
+Traceback (most recent call last):
+  File "/raid/home/devai/disaggregated-inference/src/v3_disaggregated/7_benchmark_master.py", line 152, in <module>
+    asyncio.run(main())
+  File "/home/devai/miniconda3/envs/infra-platform/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/home/devai/miniconda3/envs/infra-platform/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/raid/home/devai/disaggregated-inference/src/v3_disaggregated/7_benchmark_master.py", line 143, in main
+    await run_concurrent_benchmark("PURE LLM WORKLOAD", PURE_LLM_PROMPT, max_tokens=300)
+  File "/raid/home/devai/disaggregated-inference/src/v3_disaggregated/7_benchmark_master.py", line 137, in run_concurrent_benchmark
+    print(f"P95 TTFT (95th Percentile)     : {p95_ttft:.2f} ms")
+TypeError: unsupported format string passed to list.__format__
+==================================================

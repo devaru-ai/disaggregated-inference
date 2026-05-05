@@ -1,0 +1,25 @@
+Running Monolithic Test against Local A100
+Concurrency Level: 10
+==================================================
+
+============================================================
+🚀 STARTING: PURE LLM WORKLOAD
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: http://localhost:8000
+============================================================
+❌ ALL REQUESTS FAILED. Server might be OOM or unreachable.
+
+============================================================
+🚀 STARTING: AGENT 1: FAST ROUTER
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: http://localhost:8000
+============================================================
+❌ ALL REQUESTS FAILED. Server might be OOM or unreachable.
+
+============================================================
+🚀 STARTING: AGENT 2: HEAVY RETRIEVAL
+⚙️  Concurrency Level: 10 simultaneous requests
+🌐 Target Node: http://localhost:8000
+============================================================
+❌ ALL REQUESTS FAILED. Server might be OOM or unreachable.
+==================================================
