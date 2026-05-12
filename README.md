@@ -23,7 +23,7 @@ Dynamo is designed to work with modern inference engines such as **vLLM, SGLang,
 We evaluate LLM inference performance across monolithic and disaggregated serving topologies, isolating compute, memory, and network bottlenecks. The system is designed to mirror key architectural ideas from NVIDIA Dynamo (prefill–decode disaggregation, KV-aware routing, and cluster-level scheduling), but implemented as a heterogeneous experimental prototype across GPU tiers.
 
 
-## 1. Monolithic Serving Baselines (Compute & Memory Ceilings)
+## 1. Monolithic Serving Baselines 
 
 We first establish performance baselines using single-node inference, where both prefill and decode execute on the same GPU, defining compute- and memory-bound ceilings.
 
