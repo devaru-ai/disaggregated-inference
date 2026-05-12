@@ -1,4 +1,3 @@
 # disaggregated-inference
 
-#### This project implements a heterogeneous disaggregated inference prototype inspired by NVIDIA Dynamo to measure end-to-end LLM serving metrics and evaluate architectural trade-offs across GPU tiers.
-
+#### A heterogeneous disaggregated inference prototype inspired by NVIDIA Dynamo for benchmarking prefill and decode performance across GPU tiers and evaluating LLM serving trade-offs.
